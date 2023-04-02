@@ -2,11 +2,11 @@ from . import __version__ as app_version
 
 app_name = "student_app"
 app_title = "Student App"
-app_publisher = "s"
+app_publisher = "saad chaudhary"
 app_description = "s"
 app_icon = "s"
 app_color = "s"
-app_email = "s"
+app_email = ""
 app_license = "s"
 
 # Includes in <head>
@@ -172,6 +172,39 @@ user_data_fields = [
 	}
 ]
 
+
+fixtures = [
+    {
+		"dt": "Web Form", "filters": [
+			[
+				"name", "in", [
+					"student"
+				]
+			]
+		]
+    },
+    {
+		"dt": "Workflow", "filters": [
+			[
+				"name", "in", [
+					"student"
+				]
+			]
+		]
+    },
+    {
+		"dt": "Role", "filters": [
+			[
+				"name", "in", [
+					"student",
+                    "DEAN",
+                    "HOD",
+                    "Faculty",
+				]
+			]
+		]
+    },
+]
 # Authentication and authorization
 # --------------------------------
 
